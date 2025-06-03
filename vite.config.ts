@@ -5,6 +5,7 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 import basicSsl from '@vitejs/plugin-basic-ssl'
 import legacy from '@vitejs/plugin-legacy'
 import react from '@vitejs/plugin-react'
+import path from "path";
 
 export default defineConfig({
     plugins: [

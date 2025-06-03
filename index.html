@@ -9,5 +9,12 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      const handleWindowResize = () => {
+        document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`)
+      }
+      handleWindowResize()
+      window.addEventListener('resize', handleWindowResize)
+    </script>
   </body>
 </html>
